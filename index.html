@@ -1,0 +1,745 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+  <title>bookly.com</title>
+  <meta name="description" content="Join the Virtual Book Club - discover books, share reviews, and connect with fellow readers worldwide. Your global community for all things reading.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/aurora-3" rel="stylesheet">
+  <link rel="stylesheet" href="design.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">Bookly</a>
+    <nav class="nav" id="primary-nav">
+      <a href="#home" class="nav-link">
+        <span class="icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor"/><polyline points="9,22 9,12 15,12 15,22" stroke="currentColor"/></svg>
+        </span>
+        <span class="label">Home</span>
+      </a>
+      <a href="#about" class="nav-link">
+        <span class="icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" stroke="currentColor"/><path d="M21 22a9 9 0 1 0-18 0" stroke="currentColor"/></svg>
+        </span>
+        <span class="label">About</span>
+      </a>
+      <a href="#discussions" class="nav-link">
+        <span class="icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" stroke="currentColor"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" stroke="currentColor"/></svg>
+        </span>
+        <span class="label">Books</span>
+      </a>
+      <a href="#reviews" class="nav-link">
+        <span class="icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" stroke="currentColor"/></svg>
+        </span>
+        <span class="label">Reviews</span>
+      </a>
+      <a href="#discussions" class="nav-link">
+        <span class="icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor"/></svg>
+        </span>
+        <span class="label">Discuss</span>
+      </a>
+      <a href="#join" class="nav-link">
+        <span class="icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" stroke="currentColor"/><circle cx="9" cy="7" r="4" stroke="currentColor"/><path d="M22 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor"/><path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor"/></svg>
+        </span>
+        <span class="label">Join</span>
+      </a>
+      <a href="#contact" class="nav-link">
+        <span class="icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M21 8l-9 6-9-6" stroke="currentColor"/><path d="M3 8h18v8H3z" stroke="currentColor"/></svg>
+        </span>
+        <span class="label">Contact</span>
+      </a>
+      <a href="#admin" class="nav-link" id="admin-nav" style="display: none;">
+        <span class="icon" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="7" r="4" stroke="currentColor"/><path d="M4 21a8 8 0 0 1 16 0" stroke="currentColor"/></svg>
+        </span>
+        <span class="label">Admin</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>Welcome to Bookly</h1>
+      <p>Discover books, share reviews, and connect with fellow readers worldwide.</p>
+      
+      <div class="cta-group">
+        <a class="btn primary big" href="#join">Join Now</a>
+      </div>
+
+      <!-- Home Recommendations -->
+      <div class="home-recs">
+        <div class="rec-list">
+          <h3>Book Recommendations</h3>
+          <div class="rec-item">
+            <div class="rec-cover" aria-hidden="true">📘</div>
+            <div class="rec-content">
+              <h4>The Wizards of Once</h4>
+              <p>By Cressida Cowell — A magical adventure where a Wizard boy who has no Magic and a Warrior girl who owns a banned Magical Object must work together to defeat an ancient evil.</p>
+              <a href="#discussions" class="btn">Join the Discussion</a>
+            </div>
+          </div>
+          <div class="rec-item">
+            <div class="rec-cover" aria-hidden="true"><img src="percy.webp" alt="Percy Jackson cover"></div>
+            <div class="rec-content">
+              <h4>Percy Jackson and the Olympians: The Lightning Thief</h4>
+              <p>By Rick Riordan — A fast-paced quest through modern-day America where Greek myths come to life and a new hero discovers his powers.</p>
+              <a href="#reviews" class="btn">See Reviews</a>
+            </div>
+          </div>
+          <div class="rec-item">
+            <div class="rec-cover" aria-hidden="true"><picture><source srcset="harry.webp" type="image/webp"><img src="harry.jpg" alt="Harry Potter cover"></picture></div>
+            <div class="rec-content">
+              <h4>Harry Potter and the Sorcerer's Stone</h4>
+              <p>By J.K. Rowling — The timeless beginning of a young wizard’s journey filled with friendship, mystery, and magic at Hogwarts.</p>
+              <a href="#discussions" class="btn">Discuss This Book</a>
+            </div>
+          </div>
+          <div class="rec-item">
+            <div class="rec-cover" aria-hidden="true">🌌</div>
+            <div class="rec-content">
+              <h4>A Wrinkle in Time</h4>
+              <p>By Madeleine L’Engle — A classic sci‑fi fantasy about courage and family, bending time and space to fight the darkness.</p>
+              <a href="#reviews" class="btn">Read Community Takes</a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="month-rec">
+          <img src="eziiii.jpg" alt="Featured banner" class="month-image">
+          <div class="month-card">
+            <h3>Recommendation of the Month</h3>
+            <p><strong>The Wizards of Once</strong> is our spotlight pick. Perfect for readers who love fast-paced fantasy, humor, and heart.</p>
+            <a href="#reviews" class="btn primary">Read Why We Love It</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>The Reading Crisis & Our Mission</h2>
+      
+      <!-- Hook Section -->
+      <div class="hook-section">
+        <h3>Did you know that 65% of children never develop a love for reading?</h3>
+        <p class="hook-text">While screens dominate our children's attention, the magic of books is slowly fading away. But here's the thing – reading isn't just about entertainment. It's about building the future leaders, thinkers, and dreamers of tomorrow.</p>
+      </div>
+
+      <!-- Problem Statement -->
+      <div class="problem-section">
+        <h3>The Silent Crisis in Our Communities</h3>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">42%</div>
+            <div class="stat-description">of children aged 6-17 have never been to a library</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3.2 hours</div>
+            <div class="stat-description">average daily screen time vs 15 minutes reading</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">1 in 4</div>
+            <div class="stat-description">adults haven't read a book in the past year</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Reading Matters -->
+      <div class="benefits-section">
+        <h3>Why Reading Changes Everything</h3>
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <div class="benefit-icon">🧠</div>
+            <h4>Cognitive Development</h4>
+            <p>Reading increases vocabulary by 50% and improves critical thinking skills. Children who read regularly score 20% higher on standardized tests.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">💭</div>
+            <h4>Empathy & Understanding</h4>
+            <p>Books transport us into different worlds, cultures, and perspectives. Readers develop 30% higher emotional intelligence and cultural awareness.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🎯</div>
+            <h4>Future Success</h4>
+            <p>Reading for just 20 minutes daily puts children in the 90th percentile of academic performance. It's the single most important predictor of success.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🔗</div>
+            <h4>Social Connection</h4>
+            <p>Shared stories create bonds that last a lifetime. Reading together builds stronger family relationships and community connections.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Challenge -->
+      <div class="challenge-section">
+        <h3>The Barriers We Face</h3>
+        <div class="challenge-content">
+          <div class="challenge-text">
+            <p><strong>The digital age has created an unintended consequence:</strong> While information is more accessible than ever, deep reading has become a lost art. Children are bombarded with quick, fragmented content that doesn't require sustained attention or critical thinking.</p>
+            
+            <p>Many parents struggle to find the right books, don't know how to make reading engaging, or simply lack the time to guide their children's literary journey. Schools focus on standardized testing rather than fostering genuine love for literature.</p>
+            
+            <p><strong>The result?</strong> A generation that can consume information rapidly but struggles with deep comprehension, empathy, and the kind of sustained focus that builds character and wisdom.</p>
+          </div>
+          <div class="challenge-stats">
+            <div class="challenge-stat">
+              <span class="challenge-number">73%</span>
+              <span class="challenge-label">of parents feel overwhelmed choosing appropriate books</span>
+            </div>
+            <div class="challenge-stat">
+              <span class="challenge-number">89%</span>
+              <span class="challenge-label">of children prefer digital entertainment over reading</span>
+            </div>
+            <div class="challenge-stat">
+              <span class="challenge-number">56%</span>
+              <span class="challenge-label">of families read together less than once per week</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Solution -->
+      <div class="solution-section">
+        <h3>How Virtual Book Club Is Changing the Game</h3>
+        <div class="solution-content">
+          <p class="solution-intro">Bookly isn't just another book recommendation site. We're a movement dedicated to reigniting the passion for reading in every family, classroom, and community.</p>
+          
+          <div class="solution-features">
+            <div class="solution-feature">
+              <h4>🎯 Personalized Discovery</h4>
+              <p>Our smart recommendation engine considers your child's age, interests, and reading level to suggest books that will actually captivate them – not just what's popular.</p>
+            </div>
+            <div class="solution-feature">
+              <h4>👥 Community Support</h4>
+              <p>Connect with other parents, teachers, and readers who share your values. Get advice, share successes, and build a network of reading advocates.</p>
+            </div>
+            <div class="solution-feature">
+              <h4>📚 Curated Excellence</h4>
+              <p>Every book in our collection is carefully vetted for quality, age-appropriateness, and educational value. No more guessing if a book is right for your child.</p>
+            </div>
+            <div class="solution-feature">
+              <h4>🏆 Reading Challenges</h4>
+              <p>Gamify the reading experience with fun challenges, achievements, and progress tracking that makes reading feel like an adventure, not a chore.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="cta-section">
+        <h3>Join the Reading Revolution</h3>
+        <p>Every child deserves to discover the magic of books. Every parent deserves support in nurturing a reader. Every community needs people who understand the transformative power of stories.</p>
+        <p><strong>Are you ready to be part of the solution?</strong></p>
+        <div class="cta-buttons">
+          <a href="#join" class="btn primary">Start Your Journey</a>
+          <a href="#discussions" class="btn">Join the Conversation</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <h2>Community Reviews</h2>
+      <p>Real reviews from real readers. Discover what our community thinks about their latest reads.</p>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-header">
+            <h4>The Seven Husbands of Evelyn Hugo</h4>
+            <div class="review-rating">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="review-text">"Absolutely captivating! Taylor Jenkins Reid weaves such compelling characters. I couldn't put it down."</p>
+          <p class="review-author">- Sarah M.</p>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <h4>Project Hail Mary</h4>
+            <div class="review-rating">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="review-text">"Brilliant blend of science and humor. Andy Weir does it again with this space adventure!"</p>
+          <p class="review-author">- Mike R.</p>
+        </div>
+        <div class="review-card">
+          <div class="review-header">
+            <h4>The Midnight Library</h4>
+            <div class="review-rating">⭐⭐⭐⭐⭐</div>
+          </div>
+          <p class="review-text">"Thought-provoking and beautifully written. This book changed my perspective on life choices."</p>
+          <p class="review-author">- Emma L.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="discussions" id="discussions">
+      <h2>Book Discussions & Forum</h2>
+      <p>Join the conversation! Share your thoughts, ask questions, and connect with fellow book lovers.</p>
+      <div class="forum-preview">
+        <div class="discussion-topic">
+          <h4>📚 Monthly Book Club Discussion: "The Midnight Library"</h4>
+          <p>Share your thoughts on Matt Haig's exploration of life's infinite possibilities.</p>
+          <span class="topic-meta">42 replies • Last active 2 hours ago</span>
+        </div>
+        <div class="discussion-topic">
+          <h4>💭 What's your favorite book of 2024 so far?</h4>
+          <p>Let's share our top reads and discover new favorites together!</p>
+          <span class="topic-meta">127 replies • Last active 1 day ago</span>
+        </div>
+        <div class="discussion-topic">
+          <h4>🎭 Hidden Gems: Lesser-known authors we love</h4>
+          <p>Discover amazing books from authors who deserve more recognition.</p>
+          <span class="topic-meta">89 replies • Last active 3 days ago</span>
+        </div>
+      </div>
+      <a href="#discussions" class="btn primary">Join the Discussion</a>
+    </section>
+
+    <section class="join" id="join">
+      <h2>Join Our Community</h2>
+      <p>Ready to dive deeper into the world of books? Join thousands of readers who share your passion for great stories.</p>
+      <div class="membership-benefits">
+        <div class="benefit">
+          <h4>📖 Weekly Book Recommendations</h4>
+          <p>Personalized suggestions based on your reading preferences</p>
+        </div>
+        <div class="benefit">
+          <h4>💬 Access to Discussion Forums</h4>
+          <p>Connect with fellow readers in our vibrant community</p>
+        </div>
+        <div class="benefit">
+          <h4>⭐ Exclusive Reviews & Ratings</h4>
+          <p>Share your thoughts and discover what others are reading</p>
+        </div>
+        <div class="benefit">
+          <h4>🎉 Monthly Virtual Book Club Events</h4>
+          <p>Join live discussions with authors and fellow readers</p>
+        </div>
+      </div>
+      <a href="#" class="btn primary" id="signup-btn">Sign Up Free</a>
+    </section>
+
+    <section class="signup" id="signup">
+      <h2>Create Your Account</h2>
+      <p>Join Bookly today and start your literary journey with our amazing community of readers.</p>
+      
+      <form class="signup-form" id="signup-form" aria-label="Sign up form">
+        <div class="form-group">
+          <label for="signup-email">Email Address</label>
+          <input type="email" id="signup-email" name="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" name="password" placeholder="Create a password" required minlength="8">
+        </div>
+        
+        <div class="form-group">
+          <label for="signup-confirm-password">Confirm Password</label>
+          <input type="password" id="signup-confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+        </div>
+        
+        <button type="submit" class="btn primary">Create Account</button>
+        <a href="#" class="btn" id="back-to-join">Back to Join</a>
+      </form>
+      
+      <div class="signup-success" id="signup-success" style="display: none;">
+        <div class="success-icon">✅</div>
+        <h3>Welcome to Bookly!</h3>
+        <p>Your account has been created successfully. You can now explore our community and start discovering amazing books!</p>
+        <a href="#" class="btn primary" id="explore-community">Explore Community</a>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <form class="contact-form" aria-label="Contact form" onsubmit="event.preventDefault()">
+        <input type="text" name="name" placeholder="Your name" aria-label="Your name">
+        <input type="email" name="email" placeholder="Email" aria-label="Email">
+        <textarea name="message" placeholder="Message" rows="4" aria-label="Message"></textarea>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+      <p class="note">Form is static. Connect your backend or service to make it work.</p>
+    </section>
+
+    <section class="admin" id="admin">
+      <h2 id="admin-heading">Welcome to Dashboard</h2>
+      <div class="admin-card">
+        <div class="admin-avatar" aria-hidden="true">👤</div>
+        <div class="admin-info">
+          <h3 id="admin-name">Reader</h3>
+          <p id="admin-email" class="muted">email@example.com</p>
+          <div class="admin-actions">
+            <button class="btn" id="logout-btn">Log Out</button>
+          </div>
+        </div>
+      </div>
+      <p class="note">This is a demo profile. Connect authentication to secure this page.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <!-- Community Tagline -->
+      <div class="footer-tagline">
+        <p class="tagline">Bringing book lovers together, one story at a time.</p>
+      </div>
+
+      <!-- Footer Grid -->
+      <div class="footer-grid">
+        <!-- Quick Links -->
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <nav class="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#work">Book Recommendations</a>
+            <a href="#reviews">Reviews & Discussions</a>
+            <a href="#join">Join the Club</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Discord">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Goodreads">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="footer-section">
+          <h3>Stay Updated</h3>
+          <form class="newsletter-form" id="newsletter-form" aria-label="Newsletter signup">
+            <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Enter your email" aria-label="Email address" required>
+            <button type="submit" class="newsletter-btn">Join Our Newsletter</button>
+          </form>
+          <div class="newsletter-success" id="newsletter-success" style="display: none;">
+            <p>✅ Thank you for reaching out to us! You've been successfully subscribed to our newsletter.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mini About & Copyright -->
+      <div class="footer-bottom">
+        <p class="footer-about">Virtual Book Club is a global space where readers share reviews, discover hidden gems, and connect through stories.</p>
+        <p class="copyright">© <span id="year"></span> Virtual Book Club. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Navigation functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const navLinks = document.querySelectorAll('.nav-link');
+      const sections = document.querySelectorAll('section');
+      let currentSection = 'home';
+
+      // Hide all sections except home initially
+      sections.forEach(section => {
+        if (section.id !== 'home') {
+          section.style.display = 'none';
+        }
+      });
+
+      // Add click event listeners to navigation links
+      navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href').substring(1);
+          
+          // Hide current section
+          const currentSectionElement = document.getElementById(currentSection);
+          if (currentSectionElement) {
+            currentSectionElement.style.display = 'none';
+            currentSectionElement.classList.remove('active');
+          }
+
+          // Show target section
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) {
+            targetSection.style.display = 'block';
+            // Small delay to ensure display change before animation
+            setTimeout(() => {
+              targetSection.classList.add('active');
+            }, 10);
+            currentSection = targetId;
+          }
+
+          // Update active navigation link
+          navLinks.forEach(navLink => navLink.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+
+        // Generic handler for all in-page anchors (CTAs like Get Started, Start Your Journey, Join the Discussion)
+        document.body.addEventListener('click', function(e) {
+          const anchor = e.target.closest('a[href^="#"]');
+          if (!anchor) return;
+          const href = anchor.getAttribute('href');
+          // Ignore empty hash links
+          if (!href || href === '#' || href.length < 2) return;
+          const targetId = href.substring(1);
+          const targetSection = document.getElementById(targetId);
+          if (!targetSection) return;
+
+          e.preventDefault();
+
+          // Hide current section
+          const currentSectionElement = document.getElementById(currentSection);
+          if (currentSectionElement) {
+            currentSectionElement.style.display = 'none';
+            currentSectionElement.classList.remove('active');
+          }
+
+          // Show target section
+          targetSection.style.display = 'block';
+          setTimeout(() => {
+            targetSection.classList.add('active');
+          }, 10);
+          currentSection = targetId;
+
+          // Update nav active state if a corresponding nav link exists
+          navLinks.forEach(navLink => navLink.classList.remove('active'));
+          const matchingNav = document.querySelector(`.nav-link[href="${href}"]`);
+          if (matchingNav) matchingNav.classList.add('active');
+        });
+
+      // Add active class to home link initially
+      const homeLink = document.querySelector('a[href="#home"]');
+      if (homeLink) {
+        homeLink.classList.add('active');
+      }
+
+      // Sign-up functionality
+      const signupBtn = document.getElementById('signup-btn');
+      const backToJoinBtn = document.getElementById('back-to-join');
+      const exploreCommunityBtn = document.getElementById('explore-community');
+
+      if (signupBtn) {
+        signupBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Hide join section
+          const joinSection = document.getElementById('join');
+          if (joinSection) {
+            joinSection.style.display = 'none';
+            joinSection.classList.remove('active');
+          }
+
+          // Show signup section
+          const signupSection = document.getElementById('signup');
+          if (signupSection) {
+            signupSection.style.display = 'block';
+            setTimeout(() => {
+              signupSection.classList.add('active');
+            }, 10);
+            currentSection = 'signup';
+          }
+
+          // Update navigation
+          navLinks.forEach(navLink => navLink.classList.remove('active'));
+        });
+      }
+
+      if (backToJoinBtn) {
+        backToJoinBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Hide signup section
+          const signupSection = document.getElementById('signup');
+          if (signupSection) {
+            signupSection.style.display = 'none';
+            signupSection.classList.remove('active');
+          }
+
+          // Show join section
+          const joinSection = document.getElementById('join');
+          if (joinSection) {
+            joinSection.style.display = 'block';
+            setTimeout(() => {
+              joinSection.classList.add('active');
+            }, 10);
+            currentSection = 'join';
+          }
+        });
+      }
+
+      if (exploreCommunityBtn) {
+        exploreCommunityBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Hide signup section
+          const signupSection = document.getElementById('signup');
+          if (signupSection) {
+            signupSection.style.display = 'none';
+            signupSection.classList.remove('active');
+          }
+
+          // Show home section
+          const homeSection = document.getElementById('home');
+          if (homeSection) {
+            homeSection.style.display = 'block';
+            setTimeout(() => {
+              homeSection.classList.add('active');
+            }, 10);
+            currentSection = 'home';
+          }
+
+          // Update navigation
+          navLinks.forEach(navLink => navLink.classList.remove('active'));
+          const homeNavLink = document.querySelector('a[href="#home"]');
+          if (homeNavLink) {
+            homeNavLink.classList.add('active');
+          }
+        });
+      }
+
+      // Sign-up form submission
+      const signupForm = document.getElementById('signup-form');
+      if (signupForm) {
+        signupForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          const email = document.getElementById('signup-email').value;
+          const password = document.getElementById('signup-password').value;
+          const confirmPassword = document.getElementById('signup-confirm-password').value;
+          
+          // Basic validation
+          if (password !== confirmPassword) {
+            alert('Passwords do not match!');
+            return;
+          }
+          
+          if (password.length < 8) {
+            alert('Password must be at least 8 characters long!');
+            return;
+          }
+          
+          // Fake account creation: store minimal profile locally
+          const userProfile = { email, name: email.split('@')[0] };
+          try { localStorage.setItem('booklyUser', JSON.stringify(userProfile)); } catch (_) {}
+
+          // Show success message
+          const signupFormElement = document.getElementById('signup-form');
+          const signupSuccess = document.getElementById('signup-success');
+          
+          if (signupFormElement && signupSuccess) {
+            signupFormElement.style.display = 'none';
+            signupSuccess.style.display = 'block';
+          }
+
+          // Refresh auth UI
+          updateAuthUI();
+        });
+      }
+
+      // Newsletter form submission
+      const newsletterForm = document.getElementById('newsletter-form');
+      if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          const email = document.getElementById('newsletter-email').value;
+          
+          // Show success message
+          const newsletterFormElement = document.getElementById('newsletter-form');
+          const newsletterSuccess = document.getElementById('newsletter-success');
+          
+          if (newsletterFormElement && newsletterSuccess) {
+            newsletterFormElement.style.display = 'none';
+            newsletterSuccess.style.display = 'block';
+            
+            // Reset form
+            newsletterForm.reset();
+          }
+        });
+      }
+      // ----- Simple Auth UI Management -----
+      function getStoredUser() {
+        try {
+          const raw = localStorage.getItem('booklyUser');
+          return raw ? JSON.parse(raw) : null;
+        } catch (_) { return null; }
+      }
+
+      function updateAuthUI() {
+        const user = getStoredUser();
+        const adminNav = document.getElementById('admin-nav');
+        if (adminNav) adminNav.style.display = user ? 'inline-flex' : 'none';
+
+        // Populate admin profile
+        const nameEl = document.getElementById('admin-name');
+        const emailEl = document.getElementById('admin-email');
+        const headingEl = document.getElementById('admin-heading');
+        if (user) {
+          if (nameEl) nameEl.textContent = user.name || 'Reader';
+          if (emailEl) emailEl.textContent = user.email || '';
+          if (headingEl) headingEl.textContent = `Welcome to Dashboard, ${user.name || 'Reader'}`;
+        } else if (headingEl) {
+          headingEl.textContent = 'Welcome to Dashboard';
+        }
+      }
+
+      updateAuthUI();
+
+      // Logout behavior
+      const logoutBtn = document.getElementById('logout-btn');
+      if (logoutBtn) {
+        logoutBtn.addEventListener('click', function() {
+          try { localStorage.removeItem('booklyUser'); } catch (_) {}
+          updateAuthUI();
+
+          // Navigate to home
+          const adminSection = document.getElementById('admin');
+          if (adminSection) {
+            adminSection.style.display = 'none';
+            adminSection.classList.remove('active');
+          }
+          const homeSection = document.getElementById('home');
+          if (homeSection) {
+            homeSection.style.display = 'block';
+            setTimeout(() => { homeSection.classList.add('active'); }, 10);
+          }
+          currentSection = 'home';
+          // Update nav active state
+          navLinks.forEach(navLink => navLink.classList.remove('active'));
+          const homeNavLink = document.querySelector('a[href="#home"]');
+          if (homeNavLink) homeNavLink.classList.add('active');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+
